@@ -5,7 +5,7 @@
   
   const response = await torrentApi.addTorrent({
     filename: Sintel,
-    'download-dir': resolve('.')
+    'download-dir': resolve('./downloads')
   });
 
   await torrentApi.stopTorrent(response.id);
